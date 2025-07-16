@@ -22,8 +22,8 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://
 apt update
 apt install -y terraform
 
-mkdir /home/zoni/terraform
-mkdir /home/zoni/.cert
+install -d -o zoni -g zoni /home/zoni/terraform
+install -d -o zoni -g zoni /home/zoni/.cert
 
 echo "Hecho. Reinicia o cierra sesión para aplicar completamente."
 
