@@ -26,7 +26,7 @@ install -d -o zoni -g zoni /home/zoni/terraform
 install -d -o zoni -g zoni /home/zoni/.cert
 
 echo -n | openssl s_client -connect rt.ral.tirea.es:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > rt_cert.pem
-cp rt_cert.pem /usr/local/share/ca-certificates/rt_cert.crt
+mv rt_cert.pem /usr/local/share/ca-certificates/rt_cert.crt
 update-ca-certificates
 
 
