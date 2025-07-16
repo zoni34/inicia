@@ -30,5 +30,5 @@ cp rt_cert.pem /usr/local/share/ca-certificates/rt_cert.crt
 update-ca-certificates
 
 
-echo "Hecho. Reinicia o cierra sesión para aplicar completamente. y configura rt /etc/request-tracker5/rt.conf aws y git"
+echo "Hecho. Reinicia o cierra sesión para aplicar completamente. y configura rt /etc/request-tracker5/rt.conf aws y git clone git@github.com:zoni34/enciende.git"
 
