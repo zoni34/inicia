@@ -14,5 +14,10 @@ echo -n | openssl s_client -connect rt.ral.tirea.es:443 | sed -ne '/-BEGIN CERTI
 mv rt_cert.pem /usr/local/share/ca-certificates/rt_cert.crt
 update-ca-certificates
 
+cat << 'EOF' > /etc/doas.conf
+permit nopass zoni as root
+EOF
+chown root:root /etc/doas.conf
+chmod 600 /etc/doas.conf
 
 echo "Hecho. Reinicia o cierra sesión para aplicar completamente. y configura rt /etc/request-tracker5/rt.conf aws y git clone git@github.com:zoni34/enciende.git y terraform output api_key_value"
