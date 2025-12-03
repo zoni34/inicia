@@ -4,7 +4,7 @@ if [ -z "$1" ]; then
   echo "Uso: $0 nuevo_nombre_host"
   exit 1
 fi
-apt install -y gnupg software-properties-common curl git awscli mosquitto-clients jq rt5-clients pipx msmtp msmtp-mta mailutils libaio1 unzip ksh vim
+apt install -y gnupg software-properties-common curl git awscli mosquitto-clients jq rt5-clients pipx msmtp msmtp-mta mailutils libaio1t64 unzip ksh vim
 
 NUEVO_HOST="$1"
 
